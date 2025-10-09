@@ -1,5 +1,5 @@
 {
-  "name": "SocialMediaDL",
+  "name": "socialmediadl",
   "version": "1.0.0",
   "main": "index.js",
   "type": "commonjs",
@@ -7,7 +7,7 @@
   "author": "ST | Sheikh Tamim",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sheikhtamimlover/SocialMediaDL.git"
+    "url": "https://github.com/sheikhtamimlover/socialmediadl.git"
   },
   "scripts": {
     "test": "node index.js"

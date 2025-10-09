@@ -1,9 +1,9 @@
 
-# SocialMediaDL
+# socialmediadl
 
-[![npm version](https://img.shields.io/npm/v/SocialMediaDL.svg)](https://www.npmjs.com/package/SocialMediaDL)
-[![GitHub stars](https://img.shields.io/github/stars/sheikhtamimlover/SocialMediaDL?style=social)](https://github.com/sheikhtamimlover/SocialMediaDL/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/sheikhtamimlover/SocialMediaDL?style=social)](https://github.com/sheikhtamimlover/SocialMediaDL/network/members)
+[![npm version](https://img.shields.io/npm/v/socialmediadl.svg)](https://www.npmjs.com/package/socialmediadl)
+[![GitHub stars](https://img.shields.io/github/stars/sheikhtamimlover/socialmediadl?style=social)](https://github.com/sheikhtamimlover/socialmediadl/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/sheikhtamimlover/socialmediadl?style=social)](https://github.com/sheikhtamimlover/socialmediadl/network/members)
 
 A universal social media downloader package for Node.js.  
 Download media from 17+ platforms including LinkedIn, Threads, Reddit, Facebook, Instagram, TikTok, YouTube, Pinterest, Twitter, and more — with auto-detection and easy-to-use API.
@@ -12,7 +12,7 @@ Download media from 17+ platforms including LinkedIn, Threads, Reddit, Facebook,
 
 ## ⭐ Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=sheikhtamimlover/SocialMediaDL&type=Date)](https://www.star-history.com/#sheikhtamimlover/SocialMediaDL&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=sheikhtamimlover/socialmediadl&type=Date)](https://www.star-history.com/#sheikhtamimlover/socialmediadl&Date)
 
 ---
 
@@ -46,19 +46,19 @@ Download media from 17+ platforms including LinkedIn, Threads, Reddit, Facebook,
 ## 🚀 Installation
 
 ```bash
-npm install SocialMediaDL
+npm install socialmediadl
 ```
 
 Or with yarn:
 
 ```bash
-yarn add SocialMediaDL
+yarn add socialmediadl
 ```
 
 Or with pnpm:
 
 ```bash
-pnpm add SocialMediaDL
+pnpm add socialmediadl
 ```
 
 ---
@@ -67,16 +67,16 @@ pnpm add SocialMediaDL
 
 ### Basic Usage (Auto-Detection)
 
-The easiest way to use SocialMediaDL is with the auto-detection feature:
+The easiest way to use socialmediadl is with the auto-detection feature:
 
 ```javascript
-const SocialMediaDL = require('SocialMediaDL');
+const socialmediadl = require('socialmediadl');
 
 async function downloadMedia() {
   try {
     // Auto-detect platform and download
     const url = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
-    const result = await SocialMediaDL.download(url);
+    const result = await socialmediadl.download(url);
 
     console.log('Platform:', result.platform); // 'youtube'
     console.log('Data:', result.data); // Media download info
@@ -109,7 +109,7 @@ const {
   fetchTiktokData,
   fetchMetaData,
   fetchTwitterData 
-} = require('SocialMediaDL');
+} = require('socialmediadl');
 
 async function examples() {
   // YouTube
@@ -131,11 +131,11 @@ async function examples() {
 Always wrap your calls in try-catch blocks:
 
 ```javascript
-const SocialMediaDL = require('SocialMediaDL');
+const socialmediadl = require('socialmediadl');
 
 async function safeDownload(url) {
   try {
-    const result = await SocialMediaDL.download(url);
+    const result = await socialmediadl.download(url);
     return result;
   } catch (error) {
     if (error.message.includes('not supported')) {
@@ -154,7 +154,7 @@ async function safeDownload(url) {
 
 ### Main Function
 
-#### `SocialMediaDL.download(url)`
+#### `socialmediadl.download(url)`
 
 Auto-detects platform and downloads media.
 
@@ -201,7 +201,7 @@ All platform functions return a Promise with platform-specific data:
 
 **Example:**
 ```javascript
-const { fetchYoutubeData } = require('SocialMediaDL');
+const { fetchYoutubeData } = require('socialmediadl');
 
 const data = await fetchYoutubeData('https://youtube.com/watch?v=...');
 console.log(data);
@@ -212,10 +212,10 @@ console.log(data);
 ## 📦 Available Exports
 
 ```javascript
-const SocialMediaDL = require('SocialMediaDL');
+const socialmediadl = require('socialmediadl');
 
 // Main function
-SocialMediaDL.download(url)
+socialmediadl.download(url)
 
 // All platform-specific functions
 const {
@@ -236,7 +236,7 @@ const {
   fetchTumblrData,
   fetchTwitterData,
   fetchYoutubeData
-} = SocialMediaDL;
+} = socialmediadl;
 ```
 
 ---
@@ -276,10 +276,10 @@ node test.js
 Or create your own test:
 
 ```javascript
-const SocialMediaDL = require('SocialMediaDL');
+const socialmediadl = require('socialmediadl');
 
 async function myTest() {
-  const result = await SocialMediaDL.download('YOUR_URL_HERE');
+  const result = await socialmediadl.download('YOUR_URL_HERE');
   console.log(result);
 }
 
@@ -301,7 +301,7 @@ Contributions are welcome! Feel free to:
 
 **ST | Sheikh Tamim**  
 GitHub: [@sheikhtamimlover](https://github.com/sheikhtamimlover)  
-Repository: [SocialMediaDL](https://github.com/sheikhtamimlover/SocialMediaDL.git)
+Repository: [socialmediadl](https://github.com/sheikhtamimlover/socialmediadl.git)
 
 ---
 
@@ -315,4 +315,4 @@ This project is open source and available for use.
 
 If you find this package useful, please consider giving it a ⭐ on GitHub!
 
-[![GitHub stars](https://img.shields.io/github/stars/sheikhtamimlover/SocialMediaDL?style=social)](https://github.com/sheikhtamimlover/SocialMediaDL/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/sheikhtamimlover/socialmediadl?style=social)](https://github.com/sheikhtamimlover/socialmediadl/stargazers)
