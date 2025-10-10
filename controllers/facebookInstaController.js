@@ -1,4 +1,4 @@
-const facebookInsta = require("../services/facebookInstaService");
+const { fetchMetaData } = require("../services/facebookInstaService");
 
 async function handleFacebookInstaDownload(req, res) {
   const { url } = req.query;
@@ -8,7 +8,7 @@ async function handleFacebookInstaDownload(req, res) {
   }
 
   try {
-    const data = await facebookInsta(url);
+    const data = await fetchMetaData(url);
     res.json({ success: true, data });
   } catch (err) {
     res.status(500).json({ success: false, error: err.message });

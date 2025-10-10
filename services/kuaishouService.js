@@ -1,4 +1,5 @@
 const axios = require("axios");
+const cheerio = require("cheerio");
 
 async function scrapeKuaishou(videoUrl) {
   if (!videoUrl) throw new Error("Missing video URL");

@@ -1,4 +1,4 @@
-const axios = require('../config/axios');
+const axios = require("axios")
 
 async function fetchYoutubeData(url) {
   try {

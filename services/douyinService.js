@@ -61,4 +61,7 @@ async function fetchDouyinVideoInfo(douyinUrl) {
   }
 }
 
-module.exports = { fetchDouyinVideoInfo };
+module.exports = {
+  fetchDouyinVideoInfo,
+  fetchDouyinData: fetchDouyinVideoInfo
+};

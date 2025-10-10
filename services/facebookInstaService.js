@@ -1,6 +1,6 @@
 const snapsave = require("metadownloader");
 
-async function facebookInsta(url) {
+async function fetchMetaData(url) {
   try {
     const result = await snapsave(url); // or snapsave.facebook(url) for FB links
     return result;
@@ -9,4 +9,4 @@ async function facebookInsta(url) {
   }
 }
 
-module.exports = facebookInsta;
+module.exports = { fetchMetaData };

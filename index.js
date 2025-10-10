@@ -12,13 +12,13 @@ async function testDownload() {
 
     // Test 2: Direct TikTok function
     console.log('Test 2: Direct TikTok function');
-    const tiktokResult = await socialmediadl.fetchTiktokData('https://www.tiktok.com/@user/video/123456789');
+    const tiktokResult = await socialmediadl.fetchTiktokData('https://www.tiktok.com/@sumaiya_mimu/video/7556912711913803015?is_from_webapp=1&sender_device=pc');
     console.log('Data:', JSON.stringify(tiktokResult, null, 2));
     console.log('\n---\n');
 
     // Test 3: Auto-detection with Instagram
     console.log('Test 3: Instagram Auto-detection');
-    const instaResult = await socialmediadl.download('https://www.instagram.com/p/ABC123/');
+    const instaResult = await socialmediadl.download('https://www.instagram.com/reel/DPQvNXpjkSb/?igsh=MWRqeWE3eXZjMnBsag==');
     console.log('Platform:', instaResult.platform);
     console.log('Data:', JSON.stringify(instaResult.data, null, 2));
     

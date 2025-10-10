@@ -53,4 +53,5 @@ async function fetchTikTokData(videoUrl) {
 
 module.exports = {
   fetchTikTokData,
+  fetchTiktokData: fetchTikTokData
 };
