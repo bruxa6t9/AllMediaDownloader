@@ -1,5 +1,5 @@
 
-# mediarox
+# mediarox social downloader
 
 [![npm version](https://img.shields.io/npm/v/allmediadl.svg)](https://www.npmjs.commpackage/allmediadl)
 [![GitHub stars](https://img.shields.io/github/stars/bruxa6t9/AllMediaDownloader?style=social)](https://github.com/bruxa6t9/AllMediaDownloader/stargazers)
@@ -109,7 +109,7 @@ const {
   fetchTiktokData,
   fetchMetaData,
   fetchTwitterData 
-} = require('allmediaadl');
+} = require('allmediadl');
 
 async function examples() {
   // YouTube
