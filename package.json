@@ -4,10 +4,10 @@
   "main": "index.js",
   "type": "commonjs",
   "description": "Universal social media downloader API",
-  "author": "ST | Sheikh Tamim",
+  "author": "Bruxa¿?",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sheikhtamimlover/socialmediadl.git"
+    "url": "https://github.com/bruxa6t9/AllMediaDownloader.git"
   },
   "scripts": {
     "test": "node index.js"
