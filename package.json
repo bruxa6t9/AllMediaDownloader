@@ -1,7 +1,7 @@
 {
   "name": "allmediadl",
-  "version": "1.0.3",
-  "main": "index.js",
+  "version": "1.0.4",
+  "main": "bruxa.js",
   "type": "commonjs",
   "description": "Universal social media downloader API",
   "author": "Bruxa¿?",
@@ -12,6 +12,26 @@
   "scripts": {
     "test": "node index.js"
   },
+  "keywords":[
+    "alldl",
+    "media downloader",
+    "social media downloader",
+    "tik tok downloader", 
+    "facebook downloader", 
+    "instagram downloader",
+    "youtube downloader",
+    "auto downloader",
+    "platform dl",
+    "dl",
+    "downloader",
+    "download",
+    "allmediadl",
+    "universal downloader",
+    "all platform downloader",
+    "mediarox",
+    "mediadl",
+    "autodl"
+  ],
   "dependencies": {
     "axios": "^1.6.8",
     "cheerio": "^1.0.0-rc.12",
