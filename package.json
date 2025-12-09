@@ -1,6 +1,6 @@
 {
-  "name": "AllMediadl",
-  "version": "1.0.2",
+  "name": "allmediadl",
+  "version": "1.0.3",
   "main": "index.js",
   "type": "commonjs",
   "description": "Universal social media downloader API",
