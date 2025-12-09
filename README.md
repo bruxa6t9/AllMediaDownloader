@@ -1,7 +1,7 @@
 
-# socialmediadl
+# mediarox
 
-[![npm version](https://img.shields.io/npm/v/AllMediadl.svg)](https://www.npmjs.com/package/AllMediadl)
+[![npm version](https://img.shields.io/npm/v/allmediadl.svg)](https://www.npmjs.commpackage/allmediadl)
 [![GitHub stars](https://img.shields.io/github/stars/bruxa6t9/AllMediaDownloader?style=social)](https://github.com/bruxa6t9/AllMediaDownloader/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/bruxa6t9/AllMediaDownloader?style=social)](https://github.com/bruxa6t9/AllMediaDownloader/network/members)
 
@@ -46,19 +46,19 @@ Download media from 19+ platforms including LinkedIn, Threads, Reddit, Facebook,
 ## 🚀 Installation
 
 ```bash
-npm install AllMediadl
+npm install allmediadl
 ```
 
 Or with yarn:
 
 ```bash
-yarn add AllMediadl
+yarn add allmediadl
 ```
 
 Or with pnpm:
 
 ```bash
-pnpm add AllMediadl
+pnpm add allmediadl
 ```
 
 ---
@@ -70,13 +70,13 @@ pnpm add AllMediadl
 The easiest way to use socialmediadl is with the auto-detection feature:
 
 ```javascript
-const AllMediadl = require('AllMediadl');
+const allmediadl = require('allmediadl');
 
 async function downloadMedia() {
   try {
     // Auto-detect platform and download
     const url = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
-    const result = await AllMediadl.download(url);
+    const result = await allmediadl.download(url);
 
     console.log('Platform:', result.platform); // 'youtube'
     console.log('Data:', result.data); // Media download info
@@ -109,7 +109,7 @@ const {
   fetchTiktokData,
   fetchMetaData,
   fetchTwitterData 
-} = require('AllMediaadl');
+} = require('allmediaadl');
 
 async function examples() {
   // YouTube
@@ -131,11 +131,11 @@ async function examples() {
 Always wrap your calls in try-catch blocks:
 
 ```javascript
-const AllMediadl = require('AllMediadl');
+const allmediadl = require('allmediadl');
 
 async function safeDownload(url) {
   try {
-    const result = await AllMediadl.download(url);
+    const result = await allmediadl.download(url);
     return result;
   } catch (error) {
     if (error.message.includes('not supported')) {
@@ -154,7 +154,7 @@ async function safeDownload(url) {
 
 ### Main Function
 
-#### `AllMediadl.download(url)`
+#### `allmediadl.download(url)`
 
 Auto-detects platform and downloads media.
 
@@ -201,7 +201,7 @@ All platform functions return a Promise with platform-specific data:
 
 **Example:**
 ```javascript
-const { fetchYoutubeData } = require('AllMediadl');
+const { fetchYoutubeData } = require('allmediadl');
 
 const data = await fetchYoutubeData('https://youtube.com/watch?v=...');
 console.log(data);
@@ -212,10 +212,10 @@ console.log(data);
 ## 📦 Available Exports
 
 ```javascript
-const AllMediadl = require('AllMediadl');
+const allmediadl = require('allmediadl');
 
 // Main function
-AllMediadl.download(url)
+allmediadl.download(url)
 
 // All platform-specific functions
 const {
@@ -236,7 +236,7 @@ const {
   fetchTumblrData,
   fetchTwitterData,
   fetchYoutubeData
-} = AllMediadl;
+} = allmediadl;
 ```
 
 ---
@@ -276,10 +276,10 @@ node test.js
 Or create your own test:
 
 ```javascript
-const AllMediadl = require('AllMediadl');
+const allmediadl = require('allmediadl');
 
 async function myTest() {
-  const result = AllMediadl.download('YOUR_URL_HERE');
+  const result = allmediadl.download('YOUR_URL_HERE');
   console.log(result);
 }
 
@@ -302,6 +302,12 @@ Contributions are welcome! Feel free to:
 **Rakib Adil**  
 GitHub: [@bruxa6t9](https://github.com/bruxa6t9)  
 Repository: [AllMediadl](https://github.com/bruxa6t9/AllMediadl.git)
+
+---
+
+## ©️Credit
+
+**ST || Sheikh Tamim**
 
 ---
 
