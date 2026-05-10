@@ -1,6 +1,6 @@
 {
   "name": "allmediadl",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "index.js",
   "description": "Universal social media downloader API",
   "author": "Bruxa¿?",
@@ -11,12 +11,12 @@
   "scripts": {
     "test": "node index.js"
   },
-  "keywords":[
+  "keywords": [
     "alldl",
     "media downloader",
     "social media downloader",
-    "tik tok downloader", 
-    "facebook downloader", 
+    "tik tok downloader",
+    "facebook downloader",
     "instagram downloader",
     "youtube downloader",
     "auto downloader",
