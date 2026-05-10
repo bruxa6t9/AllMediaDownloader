@@ -1,8 +1,7 @@
 {
   "name": "allmediadl",
   "version": "1.0.4",
-  "main": "bruxa.js",
-  "type": "commonjs",
+  "main": "index.js",
   "description": "Universal social media downloader API",
   "author": "Bruxa¿?",
   "repository": {
